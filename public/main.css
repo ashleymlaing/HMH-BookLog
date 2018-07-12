@@ -1,0 +1,95 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+}
+
+form {
+  margin: 0 auto;
+  width: 70%;
+}
+
+h1 {
+  text-align: center;
+  color: #f2a900;
+}
+
+header {
+  margin: 0 auto;
+  background-color: #898d8d;
+  color:white;
+  width: 100%;
+  max-width: 1230px;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration: none;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  font-size: 24px;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+section div {
+  width: 25%;
+}
+
+section h3 {
+  width: 100%;
+}
+
+ul.book-list {
+  width: 96%;
+  margin: 10px auto;
+  list-style: none;
+  padding-left: 0;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+
+ul.book-list li {
+  clear: both;
+  padding: 10px;
+}
+
+ul.book-list li:nth-child(even) {
+  background-color: #f2a900;
+}
+
+.fa-trash, .fa-pencil-alt {
+  float: right;
+  margin-left: 15px;
+}
+
+ul.book-list span {
+  display: block;
+}
+
+.addItem > input{
+  width: 32%;
+}

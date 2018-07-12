@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+      <link rel="stylesheet" href="main.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/author">
+              <i class="fas fa-user"></i>
+              Authors
+            </a>
+          </li>
+          <li>
+            <a href="/title">
+              <i class="fas fa-book"></i>
+              Titles
+            </a>
+          </li>
+          <li>
+            <a href="/category">
+              <i class="fas fa-object-group"></i>Categories
+            </a>
+          </li>
+          <li>
+            <a href="/add">
+              <i class="fas fa-plus"></i>
+              Add an Item
+            </a>
+          </li>
+          <li>
+            <a href="/search">
+              <i class="fas fa-search"></i>
+              Search
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Ashley's HMHCO Book WebApp</h1>
+    <ul class="book-list">
+    <% for(var i=0; i< books.length; i++) {%>
+      <li class="book-item clearfix">
+        <span><%= books[i].title %></span>
+      </li>
+    <% } %>
+    </ul>
+    <script src="main.js"></script>
+  </body>
+</html>

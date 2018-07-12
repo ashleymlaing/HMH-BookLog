@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+      <link rel="stylesheet" href="main.css">
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">
+              <i class="fas fa-home"></i>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/author">
+              <i class="fas fa-user"></i>
+              Authors
+            </a>
+          </li>
+          <li>
+            <a href="/title">
+              <i class="fas fa-book"></i>
+              Titles
+            </a>
+          </li>
+          <li>
+            <a href="/category">
+              <i class="fas fa-object-group"></i>Categories
+            </a>
+          </li>
+          <li>
+            <a href="/add">
+              <i class="fas fa-plus"></i>
+              Add an Item
+            </a>
+          </li>
+          <li>
+            <a href="/search">
+              <i class="fas fa-search"></i>
+              Search
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Ashley's HMHCO Book WebApp</h1>
+    <form class="addItem" action="/addBook" method="POST">
+      <h2>Add an Item</h2>
+      <input type="text" name="title" placeholder="Title">
+      <input type="text" name="authors" placeholder="Authors">
+      <input type="text" name="isbn" placeholder="ISBN Number">
+      <section class="categoryBoxes">
+        <h3>Category:</h3>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Adult Education">
+          <label for="Adult Education">Adult Education</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Assessment">
+          <label for="Assessment">Assessment</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Early Learning">
+          <label for="Early Learning">Early Learning</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="General Interest">
+          <label for="General Interest">General Interest</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Homeschool">
+          <label for="Homeschool">Homeschool</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Intervention">
+          <label for="Intervention">Intervention</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Leveled Reading">
+          <label for="Leveled Reading">Leveled Reading</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Literacy">
+          <label for="Literacy">Literacy</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Math">
+          <label for="Math">Math</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Professional Services">
+          <label for="Professional Services">Professional Services</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Science">
+          <label for="Science">Science</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="Social Studies">
+          <label for="Social Studies">Social Studies</label>
+        </div>
+        <div class="">
+          <input type="checkbox" name="catergories" value="World Languages">
+          <label for="World Languages">World Languages</label>
+        </div>
+      </section>
+      <button type="submit">Submit</button>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
